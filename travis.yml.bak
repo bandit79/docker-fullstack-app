@@ -18,8 +18,6 @@ after_sucess:
 
   - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_ID" --password-stdin
 
-
-
   - docker push bandit79/docker-frontend
   - docker push bandit79/docker-backend
   - docker push bandit79/docker-nginx
