@@ -6,7 +6,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t bandit79/react-test-app -f ./frontend/Dockerfile.dev ./frontend
+  - docker build -t bandit79/react-test-app -f /home/omnione/z_docker_test2/docker-full-stack-app/frontend/Dockerfile.dev ./frontend
 
 script:
   - docker run -e CI=true bandit79/react-test-app npm run test
