@@ -22,4 +22,3 @@ after_success:
   - docker push bandit79/docker-backend
   - docker push bandit79/docker-nginx
 
-
